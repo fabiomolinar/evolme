@@ -1,0 +1,39 @@
+/*
+*Verde oficial: #00c252
+*Cinza escuro: #333333
+*
+*
+*/
+
+#super-wrapper{
+  background-color: rgb(206,212,218);
+}
+#page-wrapper{
+  margin-top: 69px;
+  text-align: center;
+}
+#titulo-principal{
+  margin: 51px 0 33px 0;
+  color: #FFFFFF;
+}
+.info-contato{
+  font-size: 13px;
+  font-size: 4.7vmin;
+  color: #000000;
+}
+@media screen and (min-width: 480px){
+  .info-contato{
+    font-size: 24px;
+  }
+}
+.info-contato a{
+  color: #000000;
+}
+.logoSocial{
+  color: #FFFFFF;
+  margin-right: 7px;
+}
+.titulo-formulario{
+  margin: 31px 0px 31px 0px;
+  color: #000000;
+}

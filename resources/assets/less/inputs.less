@@ -1,0 +1,173 @@
+//cor oficial: #00c252
+// First, pass in the important variables.
+.adaptive_placeholder(@height, @radius, @margin: 1em, @border: 1px,@corValid,@corError,@corNeutra,@isTextArea: "false") {
+  @borders: (@border * 2); // <- To avoid repeating below
+  box-sizing: border-box;  // <- Important for accurate sizing
+  width: 100%;             // <- Could be almost anything
+  height: ~"calc(@{height} + @{borders})";
+  margin: 0 0 @margin;
+  padding: @margin;
+  border: @border solid @corNeutra;
+  border-radius: @radius;
+  background: #fff;
+  resize: none;  // <- For textareas
+  outline: none; // <- Because ugly
+  //
+  // Following block controls all the color change
+  //
+  &[required] {
+    &:focus {
+      border-color: @corValid;
+      + label {
+        &[placeholder] {
+          &:before {
+            color: @corValid;
+          }
+        }
+      }
+    }
+    //
+    // Following block selects label directly adjacent to input
+    //
+    &:focus,
+    &:valid {
+      + label {
+        &[placeholder] {
+          &:before when (@isTextArea = "false") {
+            transition-duration: .2s;
+            //
+            // Following lines move placeholder out of the way
+            //
+            transform: translate(0, (@margin * -1.5)) scale(.9, .9);
+          }
+          &:before when (@isTextArea = "true") {
+            transition-duration: .2s;
+            //
+            // Following lines move placeholder out of the way
+            //
+            transform: translate(0, (@margin * -2.2)) scale(.9, .9);
+          }
+        }
+      }
+    }
+    //
+    // Following block injects string from label's 'alt' attr.
+    // It comes before the other 'content' property so I can
+    // override it. Uses "invalid" pseudo-selector to know
+    // when to do that.
+    //
+    &:invalid {
+      + label {
+        &[placeholder] {
+          &[alt] {
+            &:before {
+              content: attr(alt); // Content property 1 of 2
+            }
+          }
+        }
+      }
+    }
+    + label {
+      &[placeholder] {
+        display: block;
+        pointer-events: none; // Allows clicking thru label
+        line-height: @margin * 1.25;
+        // Following pulls label into position
+        margin-top: ~"calc(-@{height} - @{borders})";
+        // Following offsets that above
+        margin-bottom: ~"calc((@{height} - @{margin}) + @{borders})";
+        //
+        // Following ':before' is needed to switch between
+        // different strings.
+        //
+        &:before {
+          content: attr(placeholder); // Content property 2 of 2
+          display: inline-block;
+          margin: 0 ~"calc(@{margin} + @{borders})";
+          padding: 0 2px;
+          color: #898989;
+          white-space: nowrap;
+          transition: .3s ease-in-out;
+          //
+          // Following lines lets me use solid color as bkg img.
+          // This lets me size bkg to something more sublte
+          //
+          background-image: linear-gradient(to bottom, #fff, #fff);
+          background-size: 100% 5px;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+      }
+    }
+  }
+  //
+  // Mudando as cores para validação
+  //
+  &[required][class="val-valid"] {
+    border-color: @corValid;
+    &:focus {
+      + label {
+        &[placeholder] {
+          &:before {
+            color: @corValid;
+          }
+        }
+      }
+    }
+    + label {
+      &[placeholder] {
+        &:before {
+          color: @corValid;
+        }
+      }
+    }
+  }
+  &[required][class="val-error"] {
+    border-color: @corError;
+    &:focus {
+      + label {
+        &[placeholder] {
+          &:before {
+            color: @corError;
+          }
+        }
+      }
+    }
+    + label {
+      &[placeholder] {
+        &:before {
+          color: @corError;
+        }
+      }
+    }
+  }
+}
+//
+// Following block is how I call the above function
+//
+@corValid: #00c252;
+@corError: #FF0000;
+@corNeutra: #ccc;
+@isTextArea: "false";
+@margin: 1em;
+@border: 1px;
+input {
+  @height: 3em;
+  &[type="text"] {
+    .adaptive_placeholder(@height, (@height / 2),@margin,@border,@corValid,@corError,@corNeutra);
+  }
+}
+input {
+  @height: 3em;
+  &[type="password"] {
+    .adaptive_placeholder(@height, (@height / 2),@margin,@border,@corValid,@corError,@corNeutra);
+  }
+}
+textarea {
+  @height: 9em;
+  @radius: 33px;
+  @isTextArea: "true";
+  &[type="text"] {
+    .adaptive_placeholder(@height, @radius,@margin,@border,@corValid,@corError,@corNeutra,@isTextArea);
+  }
+}

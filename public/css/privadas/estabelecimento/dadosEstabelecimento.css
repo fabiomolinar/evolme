@@ -1,0 +1,22 @@
+/*
+*Verde oficial: #00c252
+*Cinza escuro: #333333
+*
+*
+*/
+#conteudo{
+  margin-top: 33px;
+}
+.botao-alterar-dados{
+  height: 50px;
+}
+.botao-alterar-dados button{
+  display: inline-block;
+  float: right;
+}
+.input-block-level {
+  display: block;
+  width: 100%;
+  min-height: 28px;        // Make inputs at least the height of their button counterpart
+  .box-sizing(border-box); // Makes inputs behave like true block-level elements
+}

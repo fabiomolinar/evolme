@@ -1,0 +1,137 @@
+/*
+*Verde oficial: #00c252
+*Cinza escuro: #333333
+*
+*
+*/
+
+/*Configurações necessárias para manter o footer sempre embaixo*/
+html,
+body {
+	margin:0;
+	padding:0;
+	height:100%;
+}
+#super-wrapper {
+	min-height:100%;
+	position:relative;
+}
+#conteudo {
+	padding-bottom:109px; /* Tamanho do footer! */
+}
+#footer, #footer footer {
+	width:100%;
+	height: 109px; /* Tamanho do footer! */
+	position:absolute;
+	bottom:0;
+	left:0;
+}
+/*Sobreescrevendo algumas configurações do bootstrap que não consegui configurar com o bootstrap-config.json*/
+.row {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+/*Classes de ajuda -----------------------------------*/
+.m0p0{ /*m0p0 = margem igual a zero e padding igual a zero*/
+	margin-left: 0px;
+	margin-right: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+@media screen and (min-width: 992px){
+  .margem-dinamica{
+    padding-left: 99px;
+    padding-right: 99px;
+  }
+}
+.zero-padding{
+	padding:0;
+}
+.margem-cinco{
+	margin: 5px;
+}
+.cor-branca{
+	color: #FFFFFF;
+}
+.centralizar{
+	text-align: center;
+	vertical-align: middle;
+}
+.fundo-branco{
+	background-color: #FFFFFF;
+	color: #000000;
+}
+.fundo-cinza{
+	background-color: #333333;
+	color: #FFFFFF;
+}
+.fundo-verde{
+	background-color: #00c252;
+	color: #000000;
+}
+.letra-verde{
+	color: #00c252;
+}
+/*Header ---------------------------------------------*/
+.header-logo{
+	height: 51px;
+	width: 96.6px;
+	margin-top: 9px;
+}
+.navbar{
+	background-image: none;	/*Removendo efeito de gradiente do Bootstrap*/
+	margin-bottom: 0px;
+	position: fixed;
+	right: 0;
+	left: 0;
+	z-index: 99;
+}
+.navbar-brand{
+	padding: 0;
+}
+.header-icones span{
+	margin-left: 3px;
+	margin-right: 3px;
+	margin-left: 0.69vw;
+	margin-right: 0.69vw;
+}
+@media screen and (max-width: 768px){
+	.header-icones span{
+		margin-left: 0vw;
+		margin-right: 3vw;
+	}
+}
+#errosAjax, #errosBack{
+	position: relative;
+	right: 0;
+	top: 72px;
+	margin-bottom: 0px;
+}
+/*Footer ----------------------------------------------*/
+footer{
+	color: white;
+	background-color: #333333;
+}
+.footer-texto-links{
+	margin-left: 3px;
+	margin-right: 3px;
+	margin-left: 0.69vw;
+	margin-right: 0.69vw;
+	font-size: smaller;
+}
+.footer-icones span{
+	margin-left: 3px;
+	margin-right: 3px;
+	margin-left: 0.69vw;
+	margin-right: 0.69vw;
+}
+/*Comuns ----------------------------------------------*/
+.formulario{
+  padding: 0px 33px 33px 33px;
+}
+@media screen and (min-width: 768px) {
+  .formulario{
+    padding: 0px 111px 33px 111px;
+    padding: 0px 47vmin 33px 47vmin;
+  }
+}

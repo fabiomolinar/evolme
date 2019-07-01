@@ -1,0 +1,66 @@
+/*
+*Verde oficial: #00c252
+*Cinza escuro: #333333
+*
+*
+*/
+
+#page-wrapper{
+  margin-top: 69px;
+}
+.bloco-conteudo{
+  line-height: 30px;
+}
+@media screen and (min-width: 768px){
+  .bloco-conteudo{
+    padding-left: 111px;
+    padding-right: 111px;
+    padding-left: 24vmin;
+    padding-right: 24vmin;
+    line-height: 51px;
+  }
+}
+.bloco-conteudo p{
+  margin: 51px 0px 51px 0px;
+  text-align: center;
+}
+@media screen and (min-width: 768px){
+  .bloco-conteudo p{
+    font-size: 18px;
+  }
+}
+.sobre-origens{
+  background-color: rgb(206,212,218);
+}
+.sobre-cultura{
+  color: #FFFFFF;
+  background-image: url('../../images/sobre/sobre-fundo-min.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.sobre-evolmers .row{
+  margin-top: 38px;
+  margin-bottom: 38px;
+}
+.sobre-evolmers p{
+  margin: 7px 0px 7px 0px;
+}
+.blocoFundadores{
+  margin: 13px 0px 13px 0px;
+  text-align: center;
+}
+.bloco-conteudo p[class="descFundadores"]{
+  font-size: 14px;
+  line-height: 21px;
+}
+.imgFundadores{
+  width: 200px;
+  border-radius: 100px;
+}
+.nomeFundadores{
+  font-size: large;
+  margin: 10px 0px 0px 0px;
+}
+.cargoFundadores{
+  font-weight: bold;
+}

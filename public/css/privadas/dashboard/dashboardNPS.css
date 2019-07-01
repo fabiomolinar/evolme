@@ -1,0 +1,20 @@
+/*
+*Verde oficial: #00c252
+*Cinza escuro: #333333
+*
+*
+*/
+#morrisNotaNPS{
+  height: 224px;
+}
+#nota-nps{
+  margin: 0px;
+  text-align: center;
+  display: none;
+}
+#nota-nps span{
+  font-size: 16px;
+  font-weight: bold;
+  padding: 3px;
+  border: 3px dotted #00c252;
+}

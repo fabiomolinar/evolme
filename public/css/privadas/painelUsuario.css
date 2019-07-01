@@ -1,0 +1,45 @@
+#page-wrapper{
+  margin-top: 69px;
+  padding-top: 0px;
+}
+#menu-lateral img{
+  height: auto;
+  width: 100%;
+}
+#menu-lateral ul li[role='separator']{
+  margin: 24px 0px 24px 0px;
+}
+#menu-lateral ul li a{
+  padding: 0px;
+}
+#menu-lateral ul li a:hover{
+  background-color: transparent;
+}
+#menu-topo-row{
+  background-color: #DDDDDD;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+#menu-topo{
+  font-size: 21px;
+}
+#menu-topo ul{
+  padding: 0px 13vw 0px 13vw;
+}
+#menu-topo ul li:nth-child(2){
+  float: right;
+}
+#menu-topo ul li ul{
+  padding-right: 0px;
+  padding-left: 0px;
+  left: -51px;  /*Para que a caixa não fique fora da tela*/
+}
+#conteudo h2{
+  color: #00c252;
+  border-bottom: 3px solid #00c252;
+}
+@media screen and (min-width: 768px) {
+  #page-wrapper{
+    padding-top: 30px;
+  }
+}

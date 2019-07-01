@@ -1,0 +1,29 @@
+#selecionar-data{
+  border: transparent;
+  text-align: center;
+}
+#selecionar-data span{
+  margin: 0px 9px 0px 9px;
+}
+.data-picker{
+  display: block;
+  height: 66px;
+  margin-top: 13px;
+}
+.daterangepicker td.active, .daterangepicker td.active:hover {
+  background-color: #00c252;
+}
+.daterangepicker .input-mini.active {
+  border: 1px solid #00c252;
+}
+.ranges li {
+  color: #00c252;
+}
+.ranges li:hover {
+  background: #00c252;
+  border: 1px solid #00c252;
+}
+.ranges li.active {
+  background: #00c252;
+  border: 1px solid #00c252;
+}

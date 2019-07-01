@@ -1,0 +1,74 @@
+/*
+*Verde oficial: #00c252
+*Cinza escuro: #333333
+*
+*
+*/
+
+#super-wrapper{
+  background-color: rgb(206,212,218);
+}
+#page-wrapper{
+  margin-top: 69px;
+  text-align: center;
+}
+#titulo-principal{
+  color: #FFFFFF;
+  margin-top: 33.3px;
+  margin-bottom: 51px;
+}
+.PP-botoes{
+  margin: 33px 0px 33px 0px;
+}
+.PP-botoes div button{
+  margin: 3px 3px 3px 3px;
+  width: 201px;
+}
+.PP-pacotes{
+  background-color: #FFF;
+  border: 3px solid #FFF;
+  border-radius: 13px;
+  margin: 13px 13px 13px 13px;
+}
+.PP-pacotes h4{
+  font-weight: bold;
+}
+.PP-pacotes p:nth-of-type(1){
+  margin-left: 10px;
+}
+.PP-pacotes p:nth-of-type(2){ /* texto "ítens no pacote" */
+  color: #00c252;
+  font-size: 13px;
+  text-decoration: underline;
+  margin: -7px 3px 3px 3px;
+}
+.PP-pacotes ul{
+  text-align: left;
+  margin: 3px 13px 13px 13px;
+  padding-left: 24px;
+}
+.PP-pacotes button{
+  margin: 7px 7px 7px 7px;
+}
+.PP-pacotes p:nth-of-type(3){ /* Preço */
+  text-align: right;
+  margin: 13px 51px 24px 9px;
+  font-size: 21px;
+  color: #00c252;
+}
+@media screen and (min-width: 768px){
+  .PP-pacotes p:nth-of-type(1){ /* descrição do pacote */
+    display: table-cell;
+    height: 130px;
+    vertical-align: middle;
+  }
+  .PP-pacotes ul{
+    display: table-cell;
+    vertical-align: middle;
+  }
+  @media screen and (min-width: 1200px){
+    .PP-pacotes p:nth-of-type(1){
+      height: 99px;
+    }
+  }
+}

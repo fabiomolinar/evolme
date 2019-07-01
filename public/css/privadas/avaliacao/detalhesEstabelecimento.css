@@ -1,0 +1,58 @@
+/*
+*Verde oficial: #00c252
+*Cinza escuro: #333333
+*
+*
+*/
+#conteudo{
+  margin-top: 90px;
+  text-align: center;
+  color: #00c252;
+}
+.itemBusca{
+  color: #00c252;
+  text-align: center;
+  border-bottom: 1px solid #00c252;
+  padding-bottom: 9px;
+}
+.itemBusca-img{
+  margin-top: 25px;
+  width: 100%;
+  max-width: 69px;
+}
+.itemBusca-titulo a{
+  display: block;
+}
+.itemBusca-titulo span{
+  font-size: 11px;
+}
+.itemBuscaTabela{
+  margin-top: 9px;
+  white-space: nowrap;
+}
+.itemBuscaTabela .success{
+  white-space: normal;
+}
+.itemBusca-botoes button{
+  width: 49%
+}
+@media screen and (min-width: 768px) {
+  .itemBusca-botoes button{
+    width: 111px;
+  }
+}
+h4{
+  text-align: left;
+}
+.itemComentario h5{
+  text-align: left;
+  font-weight: bold;
+}
+.itemComentario p{
+  text-align: justify;
+}
+.itemComentario img{
+  margin-top: 15px;
+  width: 45px;
+  height: 45px;
+}

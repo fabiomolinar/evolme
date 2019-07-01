@@ -1,0 +1,18 @@
+/*
+*Verde oficial: #00c252
+*Cinza escuro: #333333
+*
+*
+*/
+.panel-heading span{
+  font-size: 9px;
+}
+.panel-heading .duvida{
+  font-size: 15px;
+  font-weight: bold;
+  color: #00c252;
+  float: right;
+  border: 1px solid #00c252;
+  padding: 0px 9px 0px 9px;
+  border-radius: 15px;
+}

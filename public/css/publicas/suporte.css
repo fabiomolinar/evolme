@@ -1,0 +1,32 @@
+/*
+*Verde oficial: #00c252
+*Cinza escuro: #333333
+*
+*
+*/
+
+#super-wrapper{
+  background-color: rgb(206,212,218);
+}
+#page-wrapper{
+  margin-top: 69px;
+  text-align: center;
+}
+#titulo-principal{
+  color: #FFFFFF;
+  margin-top: 33.3px;
+  margin-bottom: 51px;
+}
+.suporte-contato{
+  font-size: 14px;
+  font-size: 4.72vmin;
+}
+@media screen and (min-width: 768px){
+  .suporte-contato{
+    font-size: 24px;
+    font-size: 3.73vmin;
+  }
+}
+.suporte-email{
+  margin-top: 30px;
+}

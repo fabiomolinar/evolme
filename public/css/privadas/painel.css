@@ -1,0 +1,93 @@
+/*
+*Verde oficial: #00c252
+*Cinza escuro: #333333
+*
+*
+*/
+
+#conteudo table{
+  color: #00c252;
+  text-align: center;
+  font-size: 3vmin;
+}
+#conteudo table tr td{
+  padding-left: 9px;
+  padding-right: 9px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+.painel-sub-titulo{
+  margin-top: 33px;
+  color: #00c252;
+}
+#gb-row{
+  background-color: #00c252;
+  padding-top: 9px;
+  padding-bottom: 9px;
+}
+#gb-barra-progresso .progress{
+  margin-top: 13px;
+  margin-bottom: 9px;
+}
+#gb-barra-progresso div span:nth-child(2){
+  float: right;
+}
+#gb-barra-progresso div{
+  color: #FFFFFF;
+}
+#gb-barra-progresso div:nth-child(2){
+  border: 1.3px solid #FFFFFF;
+}
+#gb-conquistas-mini div{
+  margin-top: 21px;
+  color: #FFFFFF;
+  float: left;
+}
+#gb-conquistas-mini div span{
+  display: inline-block;
+  text-align: right;
+  width: 69px;
+  margin: -5.1px 9px 0px 9px;
+}
+#gb-conquistas-mini .gb-mini-blocos{
+  background-color: #FFFFFF;
+  display: inline;
+  float: right;
+  width: 33px;
+  height: 33px;
+  margin: 3px;
+  border: 1px solid #00c252;
+}
+#gb-conquistas-mini div i{
+  color: #00c252;
+  display: inline-block;
+  margin-top: 7px;
+  margin-left: 9px;
+  float: right;
+}
+@media screen and (min-width: 992px){
+  #gb-conquistas-mini div{
+    float: right;
+  }
+}
+.timeline-info{
+  border-top: 3px solid #00c252;
+  border-bottom: 9px solid #00c252;
+  margin-bottom: 18px;
+}
+.timeline-info-data{
+  font-size: 9px;
+}
+.timeline-info-data span:nth-child(2){
+  float: right;
+}
+.timeline-info-img{
+  text-align: center;
+}
+.timeline-info-img img{
+  width: 90%;
+}
+.timeline-info-texto{
+  font-size: 13px;
+  text-align: center;
+}

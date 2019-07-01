@@ -1,0 +1,69 @@
+/*
+*Verde oficial: #00c252
+*Cinza escuro: #333333
+*
+*
+*/
+#conteudo{
+  margin-top: 90px;
+  text-align: center;
+  color: #00c252;
+}
+.panel-heading{
+  text-align: left;
+}
+.panel-body p{
+  text-align: left;
+  color: #000000;
+}
+.tabelaEstrelas{
+  border-bottom: 1px solid #00c252;
+}
+.perguntasAdicionais td p{
+  color: #00c252;
+  margin-top: 24px;
+}
+.separadorBotoesNPS{
+  margin-top: 3px;
+}
+#checkbox-primeira-vez{
+  text-align: left;
+  margin-top: 9px;
+}
+.btn-group-vertical{
+  width: 216px;
+}
+.botao-selecionado{
+  background-color: #0b62a4;
+  background-image: linear-gradient(to bottom, #40a5f2 0%, #0b62a4 100%);
+}
+.botao-selecionado:hover, .botao-selecionado:active, .botao-selecionado:focus{
+  background-color: #0b62a4;
+}
+.input-data-nascimento div{
+  padding: 3px;
+}
+.input-data-nascimento div input{
+  text-align: center;
+}
+.botoes-formulario{
+  margin-top: 13px;
+}
+.escondido{
+  display: none;
+}
+.quest-adicional{
+  display: none;
+}
+.estrelas-validacao{
+  display: none;
+}
+.estrelas-validacao.fa-times{
+  color: #FF0000;
+}
+.estrelas-validacao.fa-check{
+  color: #00c252;
+}
+#nascimentoAlerta{
+  display: none;
+}
